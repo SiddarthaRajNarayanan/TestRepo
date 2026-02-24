@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="taFmGbKAwEW3wZu6xKfbVw" Reference="VxfNPb27Tk-RKW_JMk146g/R_Jd0gQItUaHc7Qj0egybQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="275, 219, 188, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='MainPanel' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='UC_Users' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='gbUsers' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='panelUser' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='txtUsername' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="32539b16-dd2d-4c89-9ea5-a8e28e53a9ba" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6baf3e429009cfc57a4d57be14fd06df.png" xmlns="">6baf3e429009cfc57a4d57be14fd06df.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="a_3JFEtCWU6-Wt76l0PmGg" Reference="VxfNPb27Tk-RKW_JMk146g/6qPzdFnelEapDC0z6MynuQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="897, 223, 69, 21" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='MainPanel' /&gt;&lt;wnd ctrlname='UC_Users' /&gt;&lt;wnd ctrlname='gbUsers' /&gt;&lt;wnd ctrlname='panelUser' /&gt;&lt;wnd ctrlname='choiceAdmin' /&gt;" Guid="3bc9f12a-0cf6-4c4d-bc1d-1fed38f0725e" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f0d1dadc5c40e95cca45db6450fd0a61.png" xmlns="">f0d1dadc5c40e95cca45db6450fd0a61.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

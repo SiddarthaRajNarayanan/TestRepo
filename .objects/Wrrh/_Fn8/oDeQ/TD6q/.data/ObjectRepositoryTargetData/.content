@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="F8hJFjSJB02vUoo1zxp_-A" Reference="VxfNPb27Tk-RKW_JMk146g/4dwLpZuKTUG7DqCdMcCZjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="14, 41, 47, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='menuStrip1' /&gt;&lt;ctrl name='menuStrip1' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" Guid="97fd4e9d-2be6-4dac-b8f1-0a9793fda1b6" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="5a5000fe504f5d4d0675ae72d7764e12.png" xmlns="">5a5000fe504f5d4d0675ae72d7764e12.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

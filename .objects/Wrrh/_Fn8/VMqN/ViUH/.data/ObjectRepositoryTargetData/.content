@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nw7znSGYSkKLO6tQMGMqSA" Reference="VxfNPb27Tk-RKW_JMk146g/SHphpa7d4kSfWDQnNn4xlw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="253, 54, 170, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txt_Username' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="15352981-5e02-4430-b84d-b6a4c3d54525" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="c5c33580b1d0a5d46f8bb758001cc63d.png" xmlns="">c5c33580b1d0a5d46f8bb758001cc63d.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

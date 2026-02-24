@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="AhCrePtwnkWEXwn84EgTpw" Reference="VxfNPb27Tk-RKW_JMk146g/Olr-frK68UCc_DiiBn3VPg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1133, 425, 446, 179" ContentHash="W_erTSGiZU6eie1PSwlhtg" FilePath="[UiBankExeFilePath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARrSURBVFhH7ZhJKL1vFMevIfOUoVBmMsbKsDEkMi0IsVAiU4rCQthYKFMJEWGjWLCwpUxFkYUFFsZkSojM83R+fU+97/8Or9/v+l///+8urvqG8z73eT7Pec5z7jmv7P39nbRZMmWDtulHAT8+Pujz81PFrol+BBBg+L22tkZLS0v0+voq2jSVxoDw2OXlJXV3d5O3tzd5eHhQf38/3dzc/AikRoB3d3c0MzNDaWlpZGpqSjKZjGVlZUW5ubm0sLDAY5Q/9x19GxBeeXp6opWVFaqpqWGP6evri3CCYPP09KSysjIGfXx8/Fce/Tbg/v4+tbS0UGhoKJmZmYlA1tbW5OvrS7a2tgqgRkZGFBISQu3t7XR8fPxtSLUAMSkCf2pqipKTkxlGT09PhHBxceG4W19fp8HBQf5fHhJjAZ6VlUWLi4v09vamNugfAfHz8PBAfX19fGTKx4nFS0tL6erqihe9vr6mvLw8MjAwUBgH4bPu7u7U3NxMFxcXaqWkLwGxSyw6OTlJGRkZZGJiorKgsGh5eTnfZHwOgAUFBZKAgvAsISGBpqen+bYrr/0lIDwAIaDn5uaopKSEnJ2dFY5TSm5ubhyXuNEdHR3k6uqqMkZZ2BguWGVlJR+7cImUj14BcGdnh2ZnZ6m1tZUD29jYWGViKWEDNjY25OXlRXZ2dn/ckLyQnrBWfX09bxCXEKenAghjQ0MDOTk5kaWl5bcW0VRYy9zcnC9XV1cXPT8/SwNWV1f/Nnb+ayHOm5qaOM9KAra1tXEuU/dof1JwDNYeGBiQ9iCEq7+6ukr5+fkUHh4uJmILCwuKj4+nlJQUCgoKIkNDQ7Y7OjpSYmIi50Z8D+OoEPx+fn6UlJTEduHCwDthYWFswzMHBwe2I5yio6M5U8zPz3M2kIxBCDcID09OTmhkZESc3MfHh7/aDg8PqbGxkSeFHalia2uL7fhKgxcAUldXR7u7u3RwcEA5OTniZoaGhvgS7O3tUWxsLNvhNWSMo6MjBc9JAsqDIkchMWOSgIAAOjs7Y3tvby8XA7CjSEAxAHttbS0D4lYi5QiLFRcX81ikq4mJCXYAvpXgSdgDAwN5k8rp5beAkDLg6empJODt7S2PlwIEjBTgy8uLAuDm5qYOUAeoIh2gDlAHqAPUAaoHKLw5+F8BMQl6YAHQ39+fSzA86+npEQFTU1PZgxiPtwxCuYW2Ek0QqpaioiIRcHx8nOEALw+4sbHBc0DKLCr14P39PZfdmZmZ3KBjEjRC6H2rqqooLi5OrLhRpKLlhB0FLopVFLNRUVFUUVHBHVtwcDCPRdGbnp7ONkjYvL29PRfIqCGl3jyIgHiARhqvz9C8yDfoqJThHegru3yThTHq2oU50DSNjY1JexCuxRHiFZqws78hVPB4g3F+fi4etwx/LC8vU3Z2tljK/00hnAoLC2l7e5tPVYZA7uzsFANfG4R4HR0d/QdweHiYYmJiKCIiQisUGRnJKYkBcc64uWg5cfbaIqQpsP0C4OLkIZocTJcAAAAASUVORK5CYII=" Reference="VxfNPb27Tk-RKW_JMk146g/Olr-frK68UCc_DiiBn3VPg" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="2ab6433d0da9d80bdd762fe5128d2b9d.png" xmlns="">2ab6433d0da9d80bdd762fe5128d2b9d.png</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="UiBankExeFilePath" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

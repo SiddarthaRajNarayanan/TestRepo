@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="Nna3wDrQaUSTzARWaBZANA" Reference="VxfNPb27Tk-RKW_JMk146g/TaZ8LkXiS0SnK8wVLAcDAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="133, 45, 1674, 935" ContentHash="CLkw_L-10E60LTZ3_2h5CA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANoSURBVFhH7ZdLKLRhFMfHdVzLvSwkwg5JuWyQSynFRrMiJbdITYqkWFopMtlgZWMhSliwkQWp2QzGQkRCya2US65//c/X8zYzL58Zn8/3LeatU9OZ5/I75zznef+v4fn5Gf/SDK4OT+3l5UXn88S+DPD6+or7+3vc3NzIb9f/3TWPARgxN9ze3kZjYyOqq6uxuroq/30FxCMAPldXVxgZGUFqaioMBoNYfHw8+vr6cHx8LGM8KYtbAIzs6ekJKysrqKioQGBgoLa5Ml9fX+Tl5WFmZgZ3d3duZ+O3AIyEz+HhIbq7uxEXF6dtmJCQgJaWFhQWFsrmyh8eHo76+npsbW0JxGfZ+BCAk29vbzE5OYns7Gz4+PhomwQEBGB8fFzg9vf3kZ6erstISkoKhoeHcXl5KeNc1/8QgMQ0m82G2tpahIaG6hY3Go2Ynp6WhS8uLpCbm6sbo0DLy8uxvLwsJXyvLE4AHHB2doaBgQEkJSXpFnS0rKwsWCwWSfd7Z8LRYmNj0dnZiYODA11ZBIAOnuDe3l6pqb+/v26RPzWWkNAdHR2w2+1aNgSAD1MeExOjm/jdxmzNzs5q50IASLO3tyctFhwcrJv0XcYzkZ+fj7W1NWcAGg/J6ekp+vv7UVxcLBMiIyPR0NCA9vZ2JCcniy8jIwNmsxk1NTUCyxasqqqS1BYUFMgY1ry5uRltbW3SrvSxk3p6erC7uyt7vXsIVd+PjY3JpLS0NDkbj4+PqKysFF9ra6uMYZ9zI0Y1Pz8vvqGhIRmTmZmJ8/NzuZBKSkrE19XVJWNc7wVdG/IZHR3VAI6OjvDw8KAD2Nzc1ADm5ubENzg4qAGwm3iPKAB2wadt6AXwAngBvAD/DQDVjgI4OTmRu1sB8H7nw1eqAlhYWBCf41VMoULZXlpaKj63rmJGurOzI7qAkxITE7G4uAir1YqioiLxmUwmbGxsYGpqSl5W1A4UJgRilAqcKmh9fV1TS3V1dfL+YFZ0gkRFzgGkDwkJkUl+fn6ySVRUlKZ6goKCEB0djYiICE2MUojSp+Sb4zxmSM1jQEtLS06ZEACmmJHm5OQ4ic+/YfyemJiYkPIQwsCDwZr/hBpSxgzzQ4Yllww0NTVJisPCwn7EqKrLyspwfX39C4B6kK3E0/wTRgFDWcYMvAFBb8vWdd24hwAAAABJRU5ErkJggg==" Reference="VxfNPb27Tk-RKW_JMk146g/TaZ8LkXiS0SnK8wVLAcDAg" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.FilePath>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.FilePath>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="0270358f7dacedc7a52cd96ae9404977.png" xmlns="">0270358f7dacedc7a52cd96ae9404977.png</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

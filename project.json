@@ -1,0 +1,55 @@
+{
+  "name": "UiBank.Micron_Library",
+  "projectId": "39ba87c4-4fc7-4557-8c2d-fe916b0b77dd",
+  "description": "A library which stores all the UI elements of Micron Applications. ",
+  "main": "NewActivity.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "25.10.3",
+    "UiPath.Testing.Activities": "24.10.1",
+    "UiPath.UIAutomation.Activities": "25.10.21",
+    "UiPath.WebAPI.Activities": "2.3.2"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.3.0",
+  "projectVersion": "1.0.8",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": [
+        "Test.xaml"
+      ]
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

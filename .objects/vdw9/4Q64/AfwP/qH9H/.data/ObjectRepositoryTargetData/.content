@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aKWOdxItAkiJlMjTT85x9Q" Reference="VxfNPb27Tk-RKW_JMk146g/fwg8nUIpo0-G4LWQLyKqFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts" DesignTimeRectangle="1335, 138, 104, 41" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='dropdownMenuLink' matching:id='fuzzy' fuzzylevel:id='0.0' tag='A' type='' class='nav-link dropdown-toggle text-dark' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='{0}' /&gt;&quot;, menuOption)]" Guid="e2d130f0-fd6d-4ab0-bd40-fba3f78fddaa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank - Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bbee8f0e41dc23fd0ef5b56b1289a5da.png" xmlns="">bbee8f0e41dc23fd0ef5b56b1289a5da.png</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="Products" Name="menuOption" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

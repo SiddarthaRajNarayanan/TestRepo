@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1WUdLIgod0e1It6RuygAeA" Reference="VxfNPb27Tk-RKW_JMk146g/svxuKeA8_UiBc53wEut6Qg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="253, 125, 89, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='btn_Submit' /&gt;" Guid="32cbe74c-e5a0-423c-9de2-c9c364f1fd2c" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5cd8b48634369204f73e6af108261fca.png" xmlns="">5cd8b48634369204f73e6af108261fca.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

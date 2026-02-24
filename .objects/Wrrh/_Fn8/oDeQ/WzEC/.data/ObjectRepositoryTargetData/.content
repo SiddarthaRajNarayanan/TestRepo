@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8qbyer6Oz0Gw9kho1BfN4Q" Reference="VxfNPb27Tk-RKW_JMk146g/7UR2q12CFk6Hjs8n7xS0tg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="275, 364, 138, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='MainPanel' /&gt;&lt;wnd ctrlname='UC_Users' /&gt;&lt;wnd ctrlname='gbUsers' /&gt;&lt;wnd ctrlname='panelButtons' /&gt;&lt;wnd ctrlname='btnFilter' /&gt;" Guid="a5bdd120-05d0-4ae7-be7d-a2af285578fb" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6e336bd801a7029f417b8e733c2b234d.png" xmlns="">6e336bd801a7029f417b8e733c2b234d.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

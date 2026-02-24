@@ -1,0 +1,6 @@
+{
+  "Name": "UiBank.Micron_Library",
+  "ProjectType": "Library",
+  "Description": "A library which stores all the UI elements of Micron Applications. ",
+  "MainFile": "NewActivity.xaml"
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Accounts",
+  "Type": "App",
+  "Id": "vdw9Sth3AUqXg2eUNEtjQA",
+  "Reference": "p_BFq5citUSX8rO3G0XZfg/vdw9Sth3AUqXg2eUNEtjQA",
+  "Created": "2026-02-24T07:13:58.7084995Z",
+  "Updated": "2026-02-24T07:13:58.7084995Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

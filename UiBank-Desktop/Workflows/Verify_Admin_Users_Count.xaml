@@ -1,0 +1,192 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Verify_Admin_Users_Count" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="UsersCount" Type="OutArgument(x:Int32)" />
+    <x:Property Name="Username" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Verify_Admin_Users_Count_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable0</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Verify_Admin_Users_Count" sap:VirtualizedContainerService.HintSize="903,1670" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="UiBank Admin" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="470,1647" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="a439fdc6-9fde-4e7a-9885-f55f37a31938" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,1458" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd2:DataTable" sap2010:Annotation.AnnotationText="Type 'sd2:DataTable0' ('clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable0') could not be resolved and was automatically replaced with 'UnknownType'" Name="dtUsers" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log message indicating navigation to user tab" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigating to User Tab&quot;]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Users'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a439fdc6-9fde-4e7a-9885-f55f37a31938" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="onn1pgGWPE6dXAUkrlPxmQ" DesignTimeRectangle="38, 213, 112, 85" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='navList' /&gt;&lt;ctrl name='Name:' role='list' /&gt;&lt;ctrl name='Users' /&gt;" Guid="68e2791e-0b89-43f1-a31d-9739b4e895fb" InformativeScreenshot="0bab98b9995c1f4cf4784233d4776b78.png" Reference="p_BFq5citUSX8rO3G0XZfg/xlqgmy90A0iwLyZR3PHKUA" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,240" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="a439fdc6-9fde-4e7a-9885-f55f37a31938" Text="[Username]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="taFmGbKAwEW3wZu6xKfbVw" DesignTimeRectangle="275, 219, 188, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='MainPanel' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='UC_Users' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='gbUsers' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='panelUser' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='txtUsername' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="32539b16-dd2d-4c89-9ea5-a8e28e53a9ba" InformativeScreenshot="6baf3e429009cfc57a4d57be14fd06df.png" Reference="p_BFq5citUSX8rO3G0XZfg/uuGyDzy1w0SQ6eAg0A6Vig" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="a439fdc6-9fde-4e7a-9885-f55f37a31938" Version="V5">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable ContentHash="a_3JFEtCWU6-Wt76l0PmGg" DesignTimeRectangle="897, 223, 69, 21" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='MainPanel' /&gt;&lt;wnd ctrlname='UC_Users' /&gt;&lt;wnd ctrlname='gbUsers' /&gt;&lt;wnd ctrlname='panelUser' /&gt;&lt;wnd ctrlname='choiceAdmin' /&gt;" Guid="3bc9f12a-0cf6-4c4d-bc1d-1fed38f0725e" InformativeScreenshot="f0d1dadc5c40e95cca45db6450fd0a61.png" Reference="p_BFq5citUSX8rO3G0XZfg/2J-tN6tLhU-rwGOYe5KpLA" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a439fdc6-9fde-4e7a-9885-f55f37a31938" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="8qbyer6Oz0Gw9kho1BfN4Q" DesignTimeRectangle="275, 364, 138, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='MainPanel' /&gt;&lt;wnd ctrlname='UC_Users' /&gt;&lt;wnd ctrlname='gbUsers' /&gt;&lt;wnd ctrlname='panelButtons' /&gt;&lt;wnd ctrlname='btnFilter' /&gt;" Guid="a5bdd120-05d0-4ae7-be7d-a2af285578fb" InformativeScreenshot="6e336bd801a7029f417b8e733c2b234d.png" Reference="p_BFq5citUSX8rO3G0XZfg/WzECdpHWZUSbZgwnc1sTGA" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable" DisplayName="Extract Table Data 'Users Table'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Username' ReferenceIdx='0' Name='Username'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Email' ReferenceIdx='1' Name='Email'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Type' ReferenceIdx='2' Name='Type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Title' ReferenceIdx='3' Name='Title'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Firstname' ReferenceIdx='4' Name='Firstname'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Middlename' ReferenceIdx='5' Name='Middlename'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Lastname' ReferenceIdx='6' Name='Lastname'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Gender' ReferenceIdx='7' Name='Gender'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Created Date' ReferenceIdx='8' Name='Created Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Locked' ReferenceIdx='9' Name='Locked'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Email Verified' ReferenceIdx='10' Name='Email Verified'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DOB' ReferenceIdx='11' Name='DOB'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" ExtractedData="[dtUsers]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_1" LimitExtractionTo="Rows" ScopeIdentifier="a439fdc6-9fde-4e7a-9885-f55f37a31938" Version="V5">
+              <uix:NExtractDataGeneric.Target>
+                <uix:TargetAnchorable ContentHash="qWGJUaev_EGaLArGSb_v7g" DesignTimeRectangle="173, 447, 1471, 432" ElementType="Table" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='MainPanel' /&gt;&lt;wnd ctrlname='UC_Users' /&gt;&lt;wnd ctrlname='gbUsers' /&gt;&lt;wnd ctrlname='gridUsers' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;" Guid="f3c004df-e399-4d52-8da7-5529a97bba91" InformativeScreenshot="2aecbf38fc9e7d8d496915bdb751ac4f.png" Reference="p_BFq5citUSX8rO3G0XZfg/gWtR8F5osUmRotNetpJuiw" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractDataGeneric.Target>
+            </uix:NExtractDataGeneric>
+            <Assign DisplayName="Assign Users Count" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[UsersCount]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[dtUsers.RowCount]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log fetched admin users count" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fetched Admin Users count : &quot;+UsersCount.ToString]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="133, 45, 1674, 935" ContentHash="Nna3wDrQaUSTzARWaBZANA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANoSURBVFhH7ZdLKLRhFMfHdVzLvSwkwg5JuWyQSynFRrMiJbdITYqkWFopMtlgZWMhSliwkQWp2QzGQkRCya2US65//c/X8zYzL58Zn8/3LeatU9OZ5/I75zznef+v4fn5Gf/SDK4OT+3l5UXn88S+DPD6+or7+3vc3NzIb9f/3TWPARgxN9ze3kZjYyOqq6uxuroq/30FxCMAPldXVxgZGUFqaioMBoNYfHw8+vr6cHx8LGM8KYtbAIzs6ekJKysrqKioQGBgoLa5Ml9fX+Tl5WFmZgZ3d3duZ+O3AIyEz+HhIbq7uxEXF6dtmJCQgJaWFhQWFsrmyh8eHo76+npsbW0JxGfZ+BCAk29vbzE5OYns7Gz4+PhomwQEBGB8fFzg9vf3kZ6erstISkoKhoeHcXl5KeNc1/8QgMQ0m82G2tpahIaG6hY3Go2Ynp6WhS8uLpCbm6sbo0DLy8uxvLwsJXyvLE4AHHB2doaBgQEkJSXpFnS0rKwsWCwWSfd7Z8LRYmNj0dnZiYODA11ZBIAOnuDe3l6pqb+/v26RPzWWkNAdHR2w2+1aNgSAD1MeExOjm/jdxmzNzs5q50IASLO3tyctFhwcrJv0XcYzkZ+fj7W1NWcAGg/J6ekp+vv7UVxcLBMiIyPR0NCA9vZ2JCcniy8jIwNmsxk1NTUCyxasqqqS1BYUFMgY1ry5uRltbW3SrvSxk3p6erC7uyt7vXsIVd+PjY3JpLS0NDkbj4+PqKysFF9ra6uMYZ9zI0Y1Pz8vvqGhIRmTmZmJ8/NzuZBKSkrE19XVJWNc7wVdG/IZHR3VAI6OjvDw8KAD2Nzc1ADm5ubENzg4qAGwm3iPKAB2wadt6AXwAngBvAD/DQDVjgI4OTmRu1sB8H7nw1eqAlhYWBCf41VMoULZXlpaKj63rmJGurOzI7qAkxITE7G4uAir1YqioiLxmUwmbGxsYGpqSl5W1A4UJgRilAqcKmh9fV1TS3V1dfL+YFZ0gkRFzgGkDwkJkUl+fn6ySVRUlKZ6goKCEB0djYiICE2MUojSp+Sb4zxmSM1jQEtLS06ZEACmmJHm5OQ4ic+/YfyemJiYkPIQwsCDwZr/hBpSxgzzQ4Yllww0NTVJisPCwn7EqKrLyspwfX39C4B6kK3E0/wTRgFDWcYMvAFBb8vWdd24hwAAAABJRU5ErkJggg==" InformativeScreenshot="0270358f7dacedc7a52cd96ae9404977.png" Reference="p_BFq5citUSX8rO3G0XZfg/oDeQhO33WEKC__6YNQiHEA" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

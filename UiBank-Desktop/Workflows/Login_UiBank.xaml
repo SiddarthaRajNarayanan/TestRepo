@@ -1,0 +1,198 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_UiDouble" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Password" Type="InArgument(x:String)" />
+    <x:Property Name="Username" Type="InArgument(x:String)" />
+    <x:Property Name="isLoggedIn" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="UiBankExeFilePath" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Login_UiDouble_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable0</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login_UiDouble" sap:VirtualizedContainerService.HintSize="959,2225" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Login" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1342" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="fa2e90f8-5514-4c69-b09f-40486b053983" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1087" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log message for UiBank Desktop App login" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Logging into UiBank Desktop App&quot;]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="fa2e90f8-5514-4c69-b09f-40486b053983" Text="[Username]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="nw7znSGYSkKLO6tQMGMqSA" DesignTimeRectangle="253, 54, 170, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txt_Username' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="15352981-5e02-4430-b84d-b6a4c3d54525" InformativeScreenshot="c5c33580b1d0a5d46f8bb758001cc63d.png" Reference="p_BFq5citUSX8rO3G0XZfg/ViUHxWRNEUi6z_nuqTtHUg" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="fa2e90f8-5514-4c69-b09f-40486b053983" Text="[Password]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="-MYLWlgxYkO22sZy_5z-Sw" DesignTimeRectangle="253, 86, 170, 25" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='txt_Password' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="610680e6-729c-4dc1-957a-df295c8181ee" InformativeScreenshot="c1fbc3c28c7fd5cc19fb3df0e6665d5d.png" Reference="p_BFq5citUSX8rO3G0XZfg/hcFu3zAeuke81Uin1ExFhA" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fa2e90f8-5514-4c69-b09f-40486b053983" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="1WUdLIgod0e1It6RuygAeA" DesignTimeRectangle="253, 125, 89, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='btn_Submit' /&gt;" Guid="32cbe74c-e5a0-423c-9de2-c9c364f1fd2c" InformativeScreenshot="5cd8b48634369204f73e6af108261fca.png" Reference="p_BFq5citUSX8rO3G0XZfg/gvOrcCzoAU-9LyoNlFGqng" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log entered login credentials" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Entered Login credentials&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1133, 425, 446, 179" ContentHash="AhCrePtwnkWEXwn84EgTpw" FilePath="[UiBankExeFilePath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARrSURBVFhH7ZhJKL1vFMevIfOUoVBmMsbKsDEkMi0IsVAiU4rCQthYKFMJEWGjWLCwpUxFkYUFFsZkSojM83R+fU+97/8Or9/v+l///+8urvqG8z73eT7Pec5z7jmv7P39nbRZMmWDtulHAT8+Pujz81PFrol+BBBg+L22tkZLS0v0+voq2jSVxoDw2OXlJXV3d5O3tzd5eHhQf38/3dzc/AikRoB3d3c0MzNDaWlpZGpqSjKZjGVlZUW5ubm0sLDAY5Q/9x19GxBeeXp6opWVFaqpqWGP6evri3CCYPP09KSysjIGfXx8/Fce/Tbg/v4+tbS0UGhoKJmZmYlA1tbW5OvrS7a2tgqgRkZGFBISQu3t7XR8fPxtSLUAMSkCf2pqipKTkxlGT09PhHBxceG4W19fp8HBQf5fHhJjAZ6VlUWLi4v09vamNugfAfHz8PBAfX19fGTKx4nFS0tL6erqihe9vr6mvLw8MjAwUBgH4bPu7u7U3NxMFxcXaqWkLwGxSyw6OTlJGRkZZGJiorKgsGh5eTnfZHwOgAUFBZKAgvAsISGBpqen+bYrr/0lIDwAIaDn5uaopKSEnJ2dFY5TSm5ubhyXuNEdHR3k6uqqMkZZ2BguWGVlJR+7cImUj14BcGdnh2ZnZ6m1tZUD29jYWGViKWEDNjY25OXlRXZ2dn/ckLyQnrBWfX09bxCXEKenAghjQ0MDOTk5kaWl5bcW0VRYy9zcnC9XV1cXPT8/SwNWV1f/Nnb+ayHOm5qaOM9KAra1tXEuU/dof1JwDNYeGBiQ9iCEq7+6ukr5+fkUHh4uJmILCwuKj4+nlJQUCgoKIkNDQ7Y7OjpSYmIi50Z8D+OoEPx+fn6UlJTEduHCwDthYWFswzMHBwe2I5yio6M5U8zPz3M2kIxBCDcID09OTmhkZESc3MfHh7/aDg8PqbGxkSeFHalia2uL7fhKgxcAUldXR7u7u3RwcEA5OTniZoaGhvgS7O3tUWxsLNvhNWSMo6MjBc9JAsqDIkchMWOSgIAAOjs7Y3tvby8XA7CjSEAxAHttbS0D4lYi5QiLFRcX81ikq4mJCXYAvpXgSdgDAwN5k8rp5beAkDLg6empJODt7S2PlwIEjBTgy8uLAuDm5qYOUAeoIh2gDlAHqAPUAaoHKLw5+F8BMQl6YAHQ39+fSzA86+npEQFTU1PZgxiPtwxCuYW2Ek0QqpaioiIRcHx8nOEALw+4sbHBc0DKLCr14P39PZfdmZmZ3KBjEjRC6H2rqqooLi5OrLhRpKLlhB0FLopVFLNRUVFUUVHBHVtwcDCPRdGbnp7ONkjYvL29PRfIqCGl3jyIgHiARhqvz9C8yDfoqJThHegru3yThTHq2oU50DSNjY1JexCuxRHiFZqws78hVPB4g3F+fi4etwx/LC8vU3Z2tljK/00hnAoLC2l7e5tPVYZA7uzsFANfG4R4HR0d/QdweHiYYmJiKCIiQisUGRnJKYkBcc64uWg5cfbaIqQpsP0C4OLkIZocTJcAAAAASUVORK5CYII=" InformativeScreenshot="2ab6433d0da9d80bdd762fe5128d2b9d.png" Reference="p_BFq5citUSX8rO3G0XZfg/VMqNvFwKQUaHhYYx3byP0w" Selector="&lt;wnd app='uibankadmin.exe' ctrlname='Login' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NCheckState DisplayName="Check App State 'Users'" Exists="[isLoggedIn]" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,860" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="10" Version="V5">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log successful UiBank Admin login" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;UiBank Admin logged in Successfully&quot;]" />
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,349" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log UiBank Admin login failure" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;UiBank Admin login failed&quot;]" />
+          <Throw DisplayName="Throw exception on UiBank Admin login failure" Exception="[new SystemException(&quot;UiBank Admin login failed&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_1" />
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable ContentHash="onn1pgGWPE6dXAUkrlPxmQ" DesignTimeRectangle="38, 213, 112, 85" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='navList' /&gt;&lt;ctrl name='Name:' role='list' /&gt;&lt;ctrl name='Users' /&gt;" Guid="68e2791e-0b89-43f1-a31d-9739b4e895fb" InformativeScreenshot="0bab98b9995c1f4cf4784233d4776b78.png" Reference="p_BFq5citUSX8rO3G0XZfg/xlqgmy90A0iwLyZR3PHKUA" ScopeSelectorArgument="&lt;wnd app='uibankadmin.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+      </uix:NCheckState.Target>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NCheckState>
+  </Sequence>
+</Activity>
