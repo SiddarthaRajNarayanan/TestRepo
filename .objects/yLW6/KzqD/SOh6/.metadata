@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Login",
+  "Type": "Screen",
+  "Id": "SOh6KMnJlUW3MsNnuQlklw",
+  "Reference": "p_BFq5citUSX8rO3G0XZfg/SOh6KMnJlUW3MsNnuQlklw",
+  "ParentRef": "p_BFq5citUSX8rO3G0XZfg/KzqDV4g7rUmIvUH9UvjHNA",
+  "Created": "2026-02-24T11:50:32.0294694Z",
+  "Updated": "2026-02-24T11:50:32.0294694Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

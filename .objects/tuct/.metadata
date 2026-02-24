@@ -1,0 +1,11 @@
+﻿{
+  "Name": "UiBank-Desktop",
+  "Type": "App",
+  "Id": "tuctdFnvQ0G6ABLkPT-BAg",
+  "Reference": "p_BFq5citUSX8rO3G0XZfg/tuctdFnvQ0G6ABLkPT-BAg",
+  "Created": "2026-02-24T11:54:52.2515354Z",
+  "Updated": "2026-02-24T11:54:52.2515354Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
